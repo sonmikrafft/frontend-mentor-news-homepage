@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Font Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="app/scss/style.css">
+  <script defer src="./app/js/script.js" type="module"></script>
+  
+  <title>Frontend Mentor | News homepage</title>
+
+</head>
+<body>
+
+<header class="header">
+  <div class="overlay has-fade"></div>
+  <nav>
+    <a href="/" class="logo">
+      <img src="assets/images/logo.svg" alt="Logo"/>
+    </a>
+    <a id="btnHamburger" href="#" class="header__toggle open hide-for-desktop">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+
+    <!-- Desktop Menu-->
+    <div class="header__links hide-for-mobile">
+      <a href="#">Home</a>
+      <a href="#">New</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+      <a href="#">Categories</a>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu-->
+  <div class="header__menu has-fade">
+    <a href="#">Home</a>
+    <a href="#">New</a>
+    <a href="#">Popular</a>
+    <a href="#">Trending</a>
+    <a href="#">Categories</a>
+  </div>
+</header>
+
+<main class="grid">
+  <!-- Home -->
+    <div class="home__image picture">
+      <img class="hide-for-desktop" src="assets/images/image-web-3-mobile.jpg" alt="Picture of Shapes">
+      <img class="hide-for-mobile" src="assets/images/image-web-3-desktop.jpg" alt="Picture of Shapes">
+    </div>
+    <div class="home__title title">
+      <h1>The Bright Future of Web 3.0?</h1>
+    </div>
+    <div class="home__description description">
+      <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+        But is it really fulfilling its promise?</p>
+      <button>Read More</button>
+    </div>
+
+  <!-- News -->
+  <section class="news">
+    <h2>New</h2>
+    <ul id="newsList"></ul>
+  </section>
+
+  <!-- Popular -->
+  <section id="articlesList" class="articles">
+  </section>
+</main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/sonmikrafft">Sonja Krafft</a>.
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "news": [
+    {
+      "title": "Hydrogen VS Electric Cars",
+      "description": "Will hydrogen-fueled cars ever catch up to EVs?"
+    },
+    {
+      "title": "The Downsides of AI Artistry",
+      "description": "What are the possible adverse effects of on-demand AI image generation?\n"
+    },
+    {
+      "title": "Is VC Funding Drying Up?",
+      "description": "Private funding by VC firms is down 50% YOY. We take a look at what that means.\n"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Reviving Retro PCs",
+      "description": "What happens when old PCs are given modern upgrades?",
+      "imgPath": "retro-pcs",
+      "imgAlt": "Retro PC"
+    },
+    {
+      "title": "Top 10 Laptops of 2022",
+      "description": "Our best picks for various needs and budgets.",
+      "imgPath": "top-laptops",
+      "imgAlt": "Keyboard of Top Laptops"
+    },
+    {
+      "title": "The Growth of Gaming",
+      "description": "How the pandemic has sparked fresh opportunities.",
+      "imgPath": "gaming-growth",
+      "imgAlt": "Flying Controller over Hand"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+.grid {
+  display: grid;
+}
+
+/*
+Home
+ */
+.home {
+  &__image {
+    width: 100%;
+    height: 18.75rem;
+    object-fit: cover;
+    padding-bottom: 1.5rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__description {
+    button {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+/*
+News
+ */
+.news {
+  padding: 1.75rem 1.25rem 0 1.25rem;
+  background-color: $very-dark-blue;
+  color: $off-white;
+
+  &__item {
+    padding: 2rem 0;
+
+    a {
+      padding-bottom: 0.75rem;
+
+      &:hover {
+        color: $soft-orange;
+      }
+    }
+  }
+
+  .item-separator {
+    border-bottom: 1px solid $grayish-blue
+  }
+}
+
+/*
+Articles
+ */
+.articles {
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 5.5rem;
+}
+
+.article {
+  display: flex;
+  gap: 1.5rem;
+  flex-grow: 1;
+
+  a:hover {
+    color: $soft-red;
+  }
+
+  &__image {
+    width: 6.25rem;
+    height: 8.125rem;
+    object-fit: cover;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__number {
+    font-size: 2rem;
+    font-weight: $font-weight-m;
+    color: $soft-red;
+  }
+
+}
+
+
+/*
+Grid Areas
+ */
+.picture {
+  grid-area: picture;
+}
+
+.title {
+  grid-area: title;
+}
+
+.description {
+  grid-area: description;
+}
+
+.news {
+  grid-area: news;
+}
+
+.articles {
+  grid-area: articles;
+}

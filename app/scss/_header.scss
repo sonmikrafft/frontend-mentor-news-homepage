@@ -1,0 +1,107 @@
+.header {
+  /*
+   Hamburger Open Style
+   */
+  &.open {
+    .header__toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  /*
+  Grey Overlay behind Mobile Menu
+   */
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($very-dark-blue, 0.5);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $off-white;
+  }
+
+  &__logo {
+    img {
+      width: 2.875rem;
+      height: 1.75em;
+    }
+  }
+
+  /*
+  Mobile Menu
+   */
+  &__toggle { // Animated Button
+    z-index: 2;
+
+    > span {
+      display: block;
+      width: 2.5rem;
+      height: 0.1875rem;
+      background-color: $very-dark-blue;
+      transition: all 300ms ease-in-out;
+      transform-origin: 0.625rem 0.0625rem;
+
+      &:not(:last-child){
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+
+  &__menu { // Menu
+    z-index: 1;
+    position: absolute;
+    width: 16rem;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: $off-white;
+    padding: 9.875rem 1.5rem;
+
+    a {
+      color: $very-dark-blue;
+      padding: 0.625rem;
+      display: block;
+
+      &:hover {
+        color: $soft-red;
+      }
+    }
+  }
+
+  /*
+  Desktop Menu
+   */
+  &__links {
+
+    a {
+      position: relative;
+      color: $very-dark-blue;
+      transition: color 300ms ease-in-out;
+
+      &:not(:last-child){
+        margin-right: 2.625rem;
+      }
+
+      &:hover {
+        color: $soft-red;
+      }
+    }
+  }
+}
